@@ -73,12 +73,10 @@ struct Home: View {
     var body: some View {
         ZStack {
             GeometryReader { geometry in
-            Path { path in
-            path.move(to: CGPoint(x: 0, y: -100))
-            path.addLine(to: CGPoint(x: 0, y: 1000))
-            path.addLine(to: CGPoint(x: 490, y: 1000))
-            path.addLine(to: CGPoint(x: 490, y: -100))
-            }
+                Rectangle()
+                    .path(in: CGRect(x:0, y: 0 - geometry.safeAreaInsets.top,
+                                     width:geometry.size.width,
+                                     height: geometry.size.height * 1.3))
             .fill(
             .linearGradient(
             Gradient(colors: [.yellow, .mint]),
@@ -90,7 +88,7 @@ struct Home: View {
         VStack {
             // header
             
-            NavigationLink(destination: treeinfo()){
+            NavigationLink(destination: treeInformation()){
                 VStack{
                     Image("logo")
                         .frame(width: 80, height: 80)

@@ -23,7 +23,6 @@
 		D740616A280595800025072E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7406169280595800025072E /* WebView.swift */; };
 		D740616D2805959F0025072E /* PageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D740616C2805959F0025072E /* PageViewModel.swift */; };
 		D740616F280595C50025072E /* Page.swift in Sources */ = {isa = PBXBuildFile; fileRef = D740616E280595C50025072E /* Page.swift */; };
-		D7406171280595FD0025072E /* treeinfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7406170280595FD0025072E /* treeinfo.swift */; };
 		D74061732805966E0025072E /* TreeCreate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74061722805966E0025072E /* TreeCreate.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +44,6 @@
 		D7406169280595800025072E /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		D740616C2805959F0025072E /* PageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewModel.swift; sourceTree = "<group>"; };
 		D740616E280595C50025072E /* Page.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page.swift; sourceTree = "<group>"; };
-		D7406170280595FD0025072E /* treeinfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = treeinfo.swift; sourceTree = "<group>"; };
 		D74061722805966E0025072E /* TreeCreate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeCreate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +105,6 @@
 				D7406169280595800025072E /* WebView.swift */,
 				D7406167280595770025072E /* Home.swift */,
 				D7406165280595520025072E /* ForestView.swift */,
-				D7406170280595FD0025072E /* treeinfo.swift */,
 				A0CA549F2805A7D40016204E /* PostWriteView.swift */,
 				A0CA54A12805A7E10016204E /* NewPostButton.swift */,
 				A0CA54A32805A7EC0016204E /* PhotoPicker.swift */,
@@ -210,7 +207,6 @@
 				D740615E28056C780025072E /* one_two_tree.xcdatamodeld in Sources */,
 				D740616A280595800025072E /* WebView.swift in Sources */,
 				D740616D2805959F0025072E /* PageViewModel.swift in Sources */,
-				D7406171280595FD0025072E /* treeinfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

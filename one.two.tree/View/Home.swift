@@ -65,7 +65,7 @@ struct Home: View {
     @Namespace var animation
     //LongPressGesture
     @State var isComplete: Bool = false
-    @State var showSheet: Bool = false
+   // @State var showSheet: Bool = false
     
     //Columns..
     let columns = Array(repeating: GridItem(.flexible(), spacing: 45), count: 3)
@@ -139,6 +139,8 @@ struct Home: View {
                 }
             }
             
+            NewPostButton()
+            /*
                 HStack {
                     Spacer()
                     Button(action: {
@@ -166,10 +168,8 @@ struct Home: View {
                         }
                         
                     }
-                
+                */
             
-            
-        }
             
         }.navigationBarTitleDisplayMode(.inline)
 

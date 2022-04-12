@@ -113,10 +113,6 @@ struct TreeCreate: View {
                     .padding()
                 
                 
-                
-
-                
-                
                 TextField("우리들 나무는 무엇인가요?", text: $content)
                     .multilineTextAlignment(.center)
                     .clipShape(Rectangle())

@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import UIKit
-
 
 struct treeInformation: View {
     @State private var treeTitle: String = "Food & Drink"
@@ -19,6 +17,7 @@ struct treeInformation: View {
     @State var showSheet: Bool = false
     
     @State var showAlert = true
+    
     @Environment(\.viewController) private var viewControllerHolder: UIViewController?
     
     var body: some View {
@@ -103,18 +102,18 @@ struct treeInformation: View {
                                             .font(.title2)
                                             .foregroundColor(.yellow)
                                         Spacer()
-                                        if showingTextEdit {
-                                            Image("pencil-1")
-                                                .onTapGesture {
-                                                    self.viewControllerHolder?.present(style: .overCurrentContext, transitionStyle: .crossDissolve) {
-                                                        ModalPopUpView(txt:$treeUsers)
-                                                    }
-                                                }
-                                               .padding(.trailing)
-                                        } else {
-                                            Image("pencil-1")
-                                                .hidden()
-                                        }
+//                                        if showingTextEdit {
+//                                            Image("pencil-1")
+//                                                .onTapGesture {
+//                                                    self.viewControllerHolder?.present(style: .overCurrentContext, transitionStyle: .crossDissolve) {
+//                                                        ModalPopUpView(txt:$treeUsers)
+//                                                    }
+//                                                }
+//                                               .padding(.trailing)
+//                                        } else {
+//                                            Image("pencil-1")
+//                                                .hidden()
+//                                        }
                                         
                                     }.padding(.leading)
                                     

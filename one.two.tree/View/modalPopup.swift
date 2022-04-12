@@ -24,7 +24,6 @@ extension EnvironmentValues {
     }
 }
 
-
 extension UIViewController {
     func present<Content: View>(style: UIModalPresentationStyle = .automatic, transitionStyle: UIModalTransitionStyle = .coverVertical, @ViewBuilder builder: () -> Content) {
         let toPresent = UIHostingController(rootView: AnyView(EmptyView()))
@@ -41,40 +40,52 @@ extension UIViewController {
 
 struct ModalPopUpView: View {
     @Binding var txt : String
+    @State private var inputTxt : String = ""
     
     @Environment(\.viewController) private var viewControllerHolder: UIViewController?
     
     var body: some View {
         VStack(alignment: .center) {
             HStack{
-                Spacer()
-                TextField("내용을 입력해 주세요", text: $txt)
+
+                TextField("내용을 입력해 주세요", text: $inputTxt)
+                    .multilineTextAlignment(.center)
+                    .frame(width: UIScreen.main.bounds.size.width - 52, height: UIScreen.main.bounds.height/10)
                     .disableAutocorrection(true)
-                Spacer()
+
             }
             
             HStack{
+                Spacer()
+                
                 Button(action: {
                     self.viewControllerHolder?.dismiss(animated: true, completion: nil)
                 }) {
                     Text("Cancel")
                 }.foregroundColor(.red).padding(.bottom)
                 Spacer()
+                
                 Button(action: {
                     self.viewControllerHolder?.dismiss(animated: true, completion: nil)
                 }) {
                     Text("Change")
+                        .onTapGesture {
+                            txt = inputTxt
+                            self.viewControllerHolder?.dismiss(animated: true, completion: nil)
+                        }
+                        
                 }.foregroundColor(.blue).padding(.bottom)
+                
+                Spacer()
+                    
             }
            
             
-        }.background(Color.white).clipShape(RoundedRectangle(cornerRadius: 3.0)).frame(width: UIScreen.main.bounds.size.width - 32)
+        }.background(Color.white)
+            .clipShape(RoundedRectangle(cornerRadius: 8.0))
+            .frame(width: UIScreen.main.bounds.size.width - 52, height: UIScreen.main.bounds.height)
             .shadow(radius: 5)
-    }
-}
-
-struct modalPopup : View {
-    var body: some View {
-        Text("hi")
+    
+  
     }
 }

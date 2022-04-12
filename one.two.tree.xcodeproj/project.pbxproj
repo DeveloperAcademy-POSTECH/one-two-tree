@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6EAF867E2805B31700EAB0F4 /* treeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EAF867D2805B31700EAB0F4 /* treeInformation.swift */; };
 		A0CA54A02805A7D40016204E /* PostWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA549F2805A7D40016204E /* PostWriteView.swift */; };
 		A0CA54A22805A7E10016204E /* NewPostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA54A12805A7E10016204E /* NewPostButton.swift */; };
 		A0CA54A42805A7EC0016204E /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA54A32805A7EC0016204E /* PhotoPicker.swift */; };
 		A0CA54A62805B4F10016204E /* modalPopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA54A52805B4F10016204E /* modalPopup.swift */; };
+		A0CA54A82805B62A0016204E /* treeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA54A72805B62A0016204E /* treeInformation.swift */; };
 		D740615228056C770025072E /* one_two_treeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D740615128056C770025072E /* one_two_treeApp.swift */; };
 		D740615428056C770025072E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D740615328056C770025072E /* ContentView.swift */; };
 		D740615628056C780025072E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D740615528056C780025072E /* Assets.xcassets */; };
@@ -28,11 +28,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6EAF867D2805B31700EAB0F4 /* treeInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = treeInformation.swift; path = ../../../prototype/niber_hongki/team3_prototype2/team3_prototype2/view/treeInformation.swift; sourceTree = "<group>"; };
 		A0CA549F2805A7D40016204E /* PostWriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostWriteView.swift; sourceTree = "<group>"; };
 		A0CA54A12805A7E10016204E /* NewPostButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostButton.swift; sourceTree = "<group>"; };
 		A0CA54A32805A7EC0016204E /* PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
 		A0CA54A52805B4F10016204E /* modalPopup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = modalPopup.swift; sourceTree = "<group>"; };
+		A0CA54A72805B62A0016204E /* treeInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = treeInformation.swift; sourceTree = "<group>"; };
 		D740614E28056C770025072E /* one.two.tree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = one.two.tree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D740615128056C770025072E /* one_two_treeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = one_two_treeApp.swift; sourceTree = "<group>"; };
 		D740615328056C770025072E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				A0CA549F2805A7D40016204E /* PostWriteView.swift */,
 				A0CA54A12805A7E10016204E /* NewPostButton.swift */,
 				A0CA54A32805A7EC0016204E /* PhotoPicker.swift */,
-				6EAF867D2805B31700EAB0F4 /* treeInformation.swift */,
+				A0CA54A72805B62A0016204E /* treeInformation.swift */,
 				A0CA54A52805B4F10016204E /* modalPopup.swift */,
 			);
 			path = View;
@@ -197,11 +197,11 @@
 			files = (
 				A0CA54A42805A7EC0016204E /* PhotoPicker.swift in Sources */,
 				D74061732805966E0025072E /* TreeCreate.swift in Sources */,
-				6EAF867E2805B31700EAB0F4 /* treeInformation.swift in Sources */,
 				A0CA54A22805A7E10016204E /* NewPostButton.swift in Sources */,
 				D740615B28056C780025072E /* Persistence.swift in Sources */,
 				A0CA54A02805A7D40016204E /* PostWriteView.swift in Sources */,
 				D740615428056C770025072E /* ContentView.swift in Sources */,
+				A0CA54A82805B62A0016204E /* treeInformation.swift in Sources */,
 				A0CA54A62805B4F10016204E /* modalPopup.swift in Sources */,
 				D740615228056C770025072E /* one_two_treeApp.swift in Sources */,
 				D7406166280595520025072E /* ForestView.swift in Sources */,

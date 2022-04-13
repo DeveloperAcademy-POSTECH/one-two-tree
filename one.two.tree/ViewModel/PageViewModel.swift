@@ -8,8 +8,7 @@
 import SwiftUI
 
 class PageViewModel: ObservableObject{
-    
-    
+
     //Selected tab
     @Published var selectedTab = "tabs"
     

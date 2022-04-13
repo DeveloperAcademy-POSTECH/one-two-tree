@@ -62,10 +62,10 @@ struct treeInformation: View {
                                         .foregroundColor(.yellow)
                                     Spacer()
                                     
-                                    Image("x.circle")
-                                    Text("59%")
-                                        .foregroundColor(.purple)
-                                    Spacer()
+//                                    Image("x.circle")
+//                                    Text("59%")
+//                                        .foregroundColor(.purple)
+//                                    Spacer()
                                 }
                                 ZStack{
                                     Text(treeTitle)

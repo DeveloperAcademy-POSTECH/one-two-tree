@@ -60,6 +60,14 @@ struct HalfSheetHelper<SheetView: View>: UIViewControllerRepresentable {
 //
 
 struct Home: View {
+  // @EnvironmentObject var imgs : imggData
+  // var imgData : [imgg]
+  // let imgCount = 5
+    
+    var imggs = [
+        "IMG_002", "IMG_0003","IMG_0114","IMG_0165","IMG_0320"
+    ]
+    
     @StateObject var pageData = PageViewModel()
     //Slide Animation
     @Namespace var animation
@@ -77,18 +85,10 @@ struct Home: View {
                     .path(in: CGRect(x:0, y: 0 - geometry.safeAreaInsets.top,
                                      width:geometry.size.width,
                                      height: geometry.size.height * 1.3))
-                    .foregroundColor(Color(red: 250 / 255, green: 242 / 255, blue: 218 / 255))
-//            .fill(
-//            .linearGradient(
-//            Gradient(colors: [.yellow, .mint]),
-//            startPoint: .init(x: 0, y: 0),
-//            endPoint: .init(x: 1, y: 0.5)
-//            )
-//            )
+                    .foregroundColor(Color(red: 81 / 255, green: 146 / 255, blue: 89 / 255))
             }
         VStack {
-            // header
-            
+
             NavigationLink(destination: treeInformation()){
                 VStack{
                     Image("logo")
@@ -97,11 +97,12 @@ struct Home: View {
                         .overlay {
                             Circle().stroke(.white, lineWidth: 2)
                         }
-                       // .background(Color.green)
+                        .background(Color(red: 244 / 255, green: 238 / 255, blue: 169 / 255))
                         .clipShape(Circle())
                         .shadow(radius: 3)
-                    Text("tree title")
+                    Text("Tree Title")
                         .font(.title2)
+                        .bold()
                         .foregroundColor(Color(red: 226 / 255, green: 143 / 255, blue: 131 / 255))
                     
                 }
@@ -112,29 +113,64 @@ struct Home: View {
             
             ScrollView {
                 VStack() {
-                LazyVGrid(columns: columns, spacing: 20, content: {
-                    ForEach(pageData.urls){page in
-                        WebView(url: page.url)
-                            .frame(width:130, height: 200)
-                            .cornerRadius(15)
-                            .contextMenu {
-                                
-                                Button{
-                                    print("Update selected")
-                                } label:{
-                                    Label("Update", systemImage: "pencil")
-                                }
-                                
-                                Button{
-                                    print("Delete selected")
-                                }label:{
-                                    Label("Delete", systemImage: "trash")
-                                }
-                            }
-                            
+                    ForEach(imggs, id: \.self){i in
+                        postRowReal()
+                    }.contextMenu {
+                        Button{
+                            print("Update selected")
+                        } label:{
+                            Label("Update", systemImage: "pencil")
+                        }
+                        
+                        Button{
+                            print("Delete selected")
+                        }label:{
+                            Label("Delete", systemImage: "trash")
+                        }
                     }
-                })
-                .padding()
+
+
+//                    postRowReal()
+//                    postRowReal()
+//                    postRowReal()
+//                        .contextMenu {
+//
+//                            Button{
+//                                print("Update selected")
+//                            } label:{
+//                                Label("Update", systemImage: "pencil")
+//                            }
+//
+//                            Button{
+//                                print("Delete selected")
+//                            }label:{
+//                                Label("Delete", systemImage: "trash")
+//                            }
+//                        }
+                        
+//                LazyVGrid(columns: columns, spacing: 20, content: {
+//                    ForEach(pageData.urls){page in
+//                        WebView(url: page.url)
+//                            .frame(width:130, height: 200)
+//                            .cornerRadius(15)
+//                            .contextMenu {
+//
+//                                Button{
+//                                    print("Update selected")
+//                                } label:{
+//                                    Label("Update", systemImage: "pencil")
+//                                }
+//
+//                                Button{
+//                                    print("Delete selected")
+//                                }label:{
+//                                    Label("Delete", systemImage: "trash")
+//                                }
+//                            }
+//
+//                    }
+//                })
+               
                 }
             }
             

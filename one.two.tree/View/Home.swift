@@ -77,13 +77,14 @@ struct Home: View {
                     .path(in: CGRect(x:0, y: 0 - geometry.safeAreaInsets.top,
                                      width:geometry.size.width,
                                      height: geometry.size.height * 1.3))
-            .fill(
-            .linearGradient(
-            Gradient(colors: [.yellow, .mint]),
-            startPoint: .init(x: 0, y: 0),
-            endPoint: .init(x: 1, y: 0.5)
-            )
-            )
+                    .foregroundColor(Color(red: 250 / 255, green: 242 / 255, blue: 218 / 255))
+//            .fill(
+//            .linearGradient(
+//            Gradient(colors: [.yellow, .mint]),
+//            startPoint: .init(x: 0, y: 0),
+//            endPoint: .init(x: 1, y: 0.5)
+//            )
+//            )
             }
         VStack {
             // header
@@ -101,7 +102,7 @@ struct Home: View {
                         .shadow(radius: 3)
                     Text("tree title")
                         .font(.title2)
-                        .foregroundColor(.black)
+                        .foregroundColor(Color(red: 226 / 255, green: 143 / 255, blue: 131 / 255))
                     
                 }
                 

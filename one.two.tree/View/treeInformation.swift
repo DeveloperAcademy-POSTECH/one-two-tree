@@ -27,13 +27,16 @@ struct treeInformation: View {
                     .path(in: CGRect(x:0, y: 0 - geometry.safeAreaInsets.top,
                                      width:geometry.size.width,
                                      height: geometry.size.height * 1.3))
-                    .fill(
-                        .linearGradient(
-                            Gradient(colors: [.green, .mint]),
-                            startPoint: .init(x: 0, y: 0),
-                            endPoint: .init(x: 1, y: 1)
-                        )
-                    )
+                    .foregroundColor(Color(red: 250 / 255, green: 242 / 255, blue: 218 / 255))
+                    .ignoresSafeArea()
+//                    .fill(
+//
+//                        .linearGradient(
+//                            Gradient(colors: [.green, .mint]),
+//                            startPoint: .init(x: 0, y: 0),
+//                            endPoint: .init(x: 1, y: 1)
+//                        )
+//                    )
             }
             VStack{
                 Spacer()
@@ -68,18 +71,18 @@ struct treeInformation: View {
                                     Text(treeTitle)
                                          .font(.title)
                                          .bold()
-                                         .foregroundColor(.yellow)
+                                         .foregroundColor(Color(red: 142 / 255, green: 151 / 255, blue: 117 / 255))
                                     HStack{
                                         Spacer()
                                         if showingTextEdit {
-                                            Image("pencil-1")
+                                            Image("pencil 2")
                                                 .onTapGesture {
                                                     self.viewControllerHolder?.present(style: .overCurrentContext, transitionStyle: .crossDissolve) {
                                                         ModalPopUpView(txt:$treeTitle)
                                                     }
                                                 }
                                         } else {
-                                            Image("pencil-1")
+                                            Image("pencil 2")
                                                 .hidden()
                                         }
                                         
@@ -87,7 +90,7 @@ struct treeInformation: View {
                                    
                                 }
 
-                                Image("tree3")
+                                Image("k식물-7")
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
                                     .frame(width: geomerty.size.width, height: geomerty.size.height*0.6)
@@ -97,10 +100,10 @@ struct treeInformation: View {
                                     HStack{
                                         Text("Users: ")
                                             .font(.title2)
-                                            .foregroundColor(.yellow)
+                                            .foregroundColor(Color(red: 142 / 255, green: 151 / 255, blue: 117 / 255))
                                         Text(treeUsers)
                                             .font(.title2)
-                                            .foregroundColor(.yellow)
+                                            .foregroundColor(Color(red: 142 / 255, green: 151 / 255, blue: 117 / 255))
                                         Spacer()
 //                                        if showingTextEdit {
 //                                            Image("pencil-1")
@@ -120,13 +123,13 @@ struct treeInformation: View {
                                     HStack{
                                         Text("Description : ")
                                             .font(.title2)
-                                            .foregroundColor(.yellow)
+                                            .foregroundColor(Color(red: 142 / 255, green: 151 / 255, blue: 117 / 255))
                                         Text(treeDescription)
                                             .font(.title2)
-                                            .foregroundColor(.yellow)
+                                            .foregroundColor(Color(red: 142 / 255, green: 151 / 255, blue: 117 / 255))
                                         Spacer()
                                         if showingTextEdit {
-                                            Image("pencil-1")
+                                            Image("pencil 2")
                                                 .onTapGesture {
                                                     self.viewControllerHolder?.present(style: .overCurrentContext, transitionStyle: .crossDissolve) {
                                                         ModalPopUpView(txt:$treeDescription)
@@ -134,7 +137,7 @@ struct treeInformation: View {
                                                 }
                                                .padding(.trailing)
                                         } else {
-                                            Image("pencil-1")
+                                            Image("pencil 2")
                                                 .hidden()
                                         }
                                         

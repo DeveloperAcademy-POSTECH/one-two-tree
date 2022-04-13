@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6EC1C4B72806795900C76BF3 /* postModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EC1C4B62806795900C76BF3 /* postModel.swift */; };
 		A0CA54A02805A7D40016204E /* PostWriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA549F2805A7D40016204E /* PostWriteView.swift */; };
 		A0CA54A22805A7E10016204E /* NewPostButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA54A12805A7E10016204E /* NewPostButton.swift */; };
 		A0CA54A42805A7EC0016204E /* PhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CA54A32805A7EC0016204E /* PhotoPicker.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6EC1C4B62806795900C76BF3 /* postModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = postModel.swift; sourceTree = "<group>"; };
 		A0CA549F2805A7D40016204E /* PostWriteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostWriteView.swift; sourceTree = "<group>"; };
 		A0CA54A12805A7E10016204E /* NewPostButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewPostButton.swift; sourceTree = "<group>"; };
 		A0CA54A32805A7EC0016204E /* PhotoPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoPicker.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6EC1C4B5280678B600C76BF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6EC1C4B62806795900C76BF3 /* postModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D740614528056C770025072E = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		D740615028056C770025072E /* one.two.tree */ = {
 			isa = PBXGroup;
 			children = (
+				6EC1C4B5280678B600C76BF3 /* Model */,
 				D740615128056C770025072E /* one_two_treeApp.swift */,
 				D740615328056C770025072E /* ContentView.swift */,
 				D740616B2805958C0025072E /* ViewModel */,
@@ -193,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0CA54A42805A7EC0016204E /* PhotoPicker.swift in Sources */,
+				6EC1C4B72806795900C76BF3 /* postModel.swift in Sources */,
 				D74061732805966E0025072E /* TreeCreate.swift in Sources */,
 				A0CA54A22805A7E10016204E /* NewPostButton.swift in Sources */,
 				D740615B28056C780025072E /* Persistence.swift in Sources */,

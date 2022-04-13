@@ -37,7 +37,21 @@ struct TreeCreate: View {
             Text("ground의 나무생성하기(+)")
         }
         .fullScreenCover(isPresented: $showingSheet) {
+            ZStack{
+                GeometryReader { geometry in
+                    Rectangle()
+                        .path(in: CGRect(x:0, y: 0 - geometry.safeAreaInsets.top,
+                                         width:geometry.size.width,
+                                         height: geometry.size.height * 1.3))
+                        .fill(
+                            .linearGradient(
+                                Gradient(colors: [.green, .mint]),
+                                startPoint: .init(x: 0, y: 0),
+                                endPoint: .init(x: 1, y: 1)
+                            )
+                        )
             VStack {
+                
                 HStack {
                     Spacer()
                     
@@ -132,6 +146,8 @@ struct TreeCreate: View {
                     Circle().stroke(.yellow, lineWidth: 3)
                 }
                 
+            }
+                }
             }
         }
     }
